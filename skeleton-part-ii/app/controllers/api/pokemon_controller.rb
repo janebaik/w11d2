@@ -1,6 +1,7 @@
 class Api::PokemonController < ApplicationController
+  # this is the layer where we communicate with db
   def index 
-    sleep 0.5
+    sleep 0.5  #to show that loading works
     @pokemon = Pokemon.all 
     render :index 
   end
